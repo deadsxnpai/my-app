@@ -1,0 +1,160 @@
+@sidebarWidth: 315px;
+@white: black;
+@activeBackground: black;
+
+@gradientBackground: linear-gradient(135deg, #020203, #343435); /* Define gradient for reuse */
+
+.mainItemFont {
+  font-family: manrope;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.sybItemFont {
+  font-family: manrope;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.sideBar {
+  // border-right: 1px solid rgba(229, 231, 238, 1);
+  transition: width 0.5s linear;
+  width: @sidebarWidth;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: @gradientBackground; /* Apply gradient background here */
+  scrollbar-width: 0;
+}
+
+.sideBarHeaderWrap {
+  height: 26px;
+  width: inherit;
+}
+
+.sideBarHeader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  overflow: hidden;
+  z-index: 101;
+  height: 86px;
+  border-right: 1px solid #e5e7ee;
+  width: inherit;
+  background: @gradientBackground; /* Apply gradient background here */
+  
+  svg {
+    margin: 0 20px 0 32px;
+    cursor: pointer;
+  }
+}
+
+.sideBarClosed {
+  width: 124px;
+}
+
+.logo {
+  transition: opacity .5s linear;
+  opacity: 1;
+}
+
+.logoHidden {
+  transition: opacity .5s linear;
+  opacity: 0;
+}
+
+.subMenu {
+  display: none;
+}
+
+.subMenuOpen {
+  display: block;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+.mainItem {
+  cursor: pointer;
+
+  .subMenu {
+    display: block;
+  }
+}
+
+.subItem {
+  overflow: hidden;
+  transition: height 0.5s linear;
+  height: 0;
+
+  .mainItem {
+    .sybItemFont();
+    max-width: 174px;
+    white-space: break-spaces;
+  }
+
+  .subMain {
+    font-size: 15px;
+  }
+}
+
+.subItemOpen {
+  height: 53px;
+}
+
+.mainItem {
+  .mainItemFont();
+  transition: opacity 0.3s linear;
+  opacity: 1;
+  white-space: nowrap;
+  margin: 0 0 0 20px;
+  color: inherit;
+}
+
+.mainItemSecond {
+  font-size: 13px;
+  background: white;
+  border: none;
+}
+
+.sideBar::-webkit-scrollbar {
+  width: 0;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.mainItemHidden {
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.itemWrap {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 56px;
+  cursor: pointer;
+
+  div {
+    display: flex;
+  }
+}
+
+.mainHidden {
+  height: 0;
+}
