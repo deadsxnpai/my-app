@@ -1,0 +1,59 @@
+@import url("./app/vendor/fonts/inter.css");
+@import url("./app/vendor/fonts/Monrope/Manrope.css");
+@import url("./app/less/variables.less");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  cursor: default;
+}
+
+h2 {
+  cursor: default;
+}
+
+.ant-table-cell {
+  cursor: default;
+}
+
+h3 {
+  cursor: default;
+}
+
+h4 {
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+
+  &:-webkit-any-link:active {
+    color: unset;
+  }
+
+  &:-webkit-any-link:visited {
+    color: unset;
+  }
+}
+
+
+//mui override
+
+.css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:after {
+  display: none;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,73 @@
+@import url('./less/variables.less');
+
+/* @mainWidth: screen.width; */
+
+.page {
+    display: flex;
+    font-family: Manrope;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-grow: 2;
+    background: rgba(245, 246, 250, 1);
+    width: 20px;
+}
+
+.main::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+iframe {
+    z-index: 100;
+    background-color: white;
+}
+
+.main-scroll-bar {
+    &>div:nth-child(3) {
+        z-index: 100;
+        width: .4rem !important;
+    }
+}

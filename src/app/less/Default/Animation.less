@@ -1,0 +1,25 @@
+.a-scale {
+    transition: 0.3s all ease;
+}
+
+.a-scale:hover {
+    transform: scale(1.05);
+}
+
+.a-scale button {
+    cursor: pointer;
+}
+
+.a-clicked {
+    transform: scale(1.25);
+    animation: clicked;
+}
+
+@keyframes clicked {
+    0% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
