@@ -1,6 +1,6 @@
 import { createSlice, } from '@reduxjs/toolkit'
 import { AuthMe, } from './types'
-import { UserRoleType } from '@/entities/userRole/model/userRoleTypes'
+import { UserRoleType } from '@/entities/userRole'
 
 
 interface AuthInitialState {
