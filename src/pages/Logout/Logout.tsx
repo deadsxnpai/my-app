@@ -23,12 +23,6 @@ const Logout2 = () => {
   useEffect(() => {
     if (isLogged) {
       new Promise(resolve => {
-        /**
-        * Это список действий которые будут выполнены при разлогине.
-        *
-        * Если нужна гарантия того что localStorage очистился перед тем как произошел редирект на главную,
-        * то нужно дописать соответствующее условие в функцию checker.
-        */
         console.log('Logout !', isLogged)
         dispatch(setRole(null))
         dispatch(chooseRole(null))
@@ -42,7 +36,6 @@ const Logout2 = () => {
         .then(() => {
           console.log('TIME FOR REDIDECT')
           window.location.replace(EndPoints.endSession)
-          // navigate('/')
         })
     }
   }, [
@@ -62,12 +55,6 @@ const Logout = () => {
     client.resetStore()
       .then(() => {
         new Promise(resolve => {
-          /**
-          * Это список действий которые будут выполнены при разлогине.
-          *
-          * Если нужна гарантия того что localStorage очистился перед тем как произошел редирект на главную,
-          * то нужно дописать соответствующее условие в функцию checker.
-          */
           dispatch(setRole(null))
           dispatch(chooseRole(null))
           dispatch(clearME())
