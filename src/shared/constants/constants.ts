@@ -5,10 +5,6 @@ import {
 } from './routes'
 import { UserRoles } from './userRoles'
 
-export const URL = "lk-dev.tsutmb,ru"
-export const dev = 'lk-dev.tsutmb.ru'
-
-
 const defaultRoles = [
   UserRoles.ADMIN, 
   UserRoles.STUDENT, 
@@ -32,12 +28,12 @@ export const navItems = [
         value: 'Дисциплины по выбору',
         role: defaultRoles,
         icon: 'contacts-book',
-        path: '/minors',
+        path: '/tracks',
       },
       {
-        value: 'Помощь с выбором',
+        value: 'Помощь в выборе',
         icon: 'projects-all',
-        path: '/helper',
+        path: '/helper-bot',
         role: defaultRoles,
       },
     ],

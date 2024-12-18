@@ -1,0 +1,98 @@
+.card-discipline-pathway {
+    --color-accent: #ffffff;
+    --text-color-black: #ffffff;
+    --text-color-grey: #ffffff;
+    --border-color-light: #f5f6fa;
+    --card-hover-shadow: 0px 5px 5px -3px #00000033, 0px 8px 10px 1px #00000024,
+      0px 3px 14px 2px #0000001f;
+  
+    border-radius: 1rem;
+    border: 2px solid var(--border-color-light);
+    color: var(--text-color-black);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1.9rem 1.7rem 1.5rem;
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    &_active {
+      border: 2px solid var(--color-accent);
+    }
+  
+    &:hover {
+      border: 2px solid var(--color-accent);
+      color: unset;
+  
+      .card-discipline-pathway__name {
+        color: var(--color-accent);
+      }
+    }
+  
+    &__title-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__name {
+      font-size: 1.2rem;
+      letter-spacing: 0.07rem;
+      margin-bottom: 0.1rem;
+    }
+  
+    &__visible-icon {
+      color: var(--text-color-grey);
+  
+      &_active {
+        color: var(--color-accent);
+      }
+  
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  
+    &__type {
+      color: var(--text-color-grey);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+  
+      svg {
+        margin-left: 70px;
+        transition: all 0.4s;
+        outline: none;
+  
+        &:hover {
+          transform: scale(1.10);
+          transition: all 0.4s;
+        }
+      }
+    }
+  
+    &__student-count-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__student-count {
+      margin-right: 0.8rem;
+    }
+  
+    .moderStatusesWrapElective {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+  
+      svg {
+        &:first-of-type {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  

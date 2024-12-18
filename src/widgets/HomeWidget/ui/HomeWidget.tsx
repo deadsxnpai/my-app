@@ -15,7 +15,7 @@ const HomeWidget = () => {
     {
       name: 'Дисциплины по выбору',
       desc: 'Перейти в раздел',
-      path: '/minors',
+      path: '/tracks',
       img: second,
       role: [
         UserRoles.STUDENT,
