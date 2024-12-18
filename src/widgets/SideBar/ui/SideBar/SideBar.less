@@ -1,4 +1,4 @@
-@sidebarWidth: 315px;
+@sidebarWidth: 250px;
 @white: black;
 @activeBackground: black;
 
@@ -32,7 +32,7 @@
 }
 
 .sideBarHeaderWrap {
-  height: 26px;
+  height: 200px;
   width: inherit;
 }
 
@@ -43,10 +43,10 @@
   top: 0;
   overflow: hidden;
   z-index: 101;
-  height: 86px;
-  border-right: 1px solid #e5e7ee;
+  height: 200px;
+  // border-right: 1px solid #e5e7ee;
   width: inherit;
-  background: @gradientBackground; /* Apply gradient background here */
+  background: @activeBackground; /* Apply gradient background here */
   
   svg {
     margin: 0 20px 0 32px;
@@ -55,10 +55,14 @@
 }
 
 .sideBarClosed {
-  width: 124px;
+  width: 120px;
 }
 
 .logo {
+  background-image: url("../../../../shared/assets/images/logo.jpg");
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
   transition: opacity .5s linear;
   opacity: 1;
 }

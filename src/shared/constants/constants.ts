@@ -45,7 +45,7 @@ export const navItems = [
 
   {
     value: 'Информация',
-    role: [...defaultRoles, 'tester'],
+    role: [...defaultRoles],
     icon: 'news',
     path: '/about',
   },

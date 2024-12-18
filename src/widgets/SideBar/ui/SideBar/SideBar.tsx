@@ -38,11 +38,11 @@ function SideBar ({
   const navMenu = useMemo(() => (
     <aside id="sidebar" className={ clsx('sideBar', !isSideBarOpen && 'sideBarClosed') }>
       <div className="sideBarHeaderWrap">
-        {/* <div className="sideBarHeader">
+        <div className="sideBarHeader">
           <button type="button" onClick={ sideBarShrink }>
-            <IconMenu2 className='logo' size={ 32 } color="#ffffff" />
+            <div className='logo' color="#ffffff" />
           </button>
-        </div> */}
+        </div>
       </div>
       <ul>
         { renderSideBar(navItems, 'Главная') }

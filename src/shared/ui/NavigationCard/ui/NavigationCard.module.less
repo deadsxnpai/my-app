@@ -1,0 +1,89 @@
+/* Main Card Container */
+.Card {
+    position: relative;
+    width: 460px;
+    height: 230px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+  }
+  
+  /* Title Section */
+  .title {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    color: #2e2e3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Subtitle Section */
+  .subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.5rem; /* 24px */
+    color: #7f8191;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Status Badge */
+  .Status {
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8125rem; /* 13px */
+    font-weight: 700;
+    color: #fff;
+  
+    /* Good Status */
+    &.Good {
+      background-color: #00ba95;
+    }
+  
+    /* Bad Status */
+    &.Bad {
+      background-color: #eb5757;
+    }
+  }
+  
+  /* Arrow Icon Container */
+  .Arrow {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 16px; /* Distance from bottom edge */
+    right: 16px; /* Distance from right edge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #a59797;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #4b4b5f;
+    }
+}

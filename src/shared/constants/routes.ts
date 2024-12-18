@@ -2,16 +2,27 @@ import { HomePage } from "@/pages/HomePage"
 import { UserRoles } from "./userRoles"
 import Login from "@/pages/Login/Login"
 import Logout from "@/pages/Logout/Logout"
+import { AboutPage } from "@/pages/AboutPage"
 
 export const MAIN_ROUTE = '/'
 export const LOGIN_ROUTE = '/login'
 export const LOGOUT = '/logout'
+export const ABOUT_ROUTE = '/about'
 
 
 export const AuthRoutes = [
     {
       path: MAIN_ROUTE,
       Component: HomePage,
+      roles: [
+        UserRoles.ADMIN,
+        UserRoles.TESTER,
+        UserRoles.STUDENT
+      ],
+    },
+    {
+      path: ABOUT_ROUTE,
+      Component: AboutPage,
       roles: [
         UserRoles.ADMIN,
         UserRoles.TESTER,
