@@ -1,5 +1,4 @@
 import React from 'react'
-import { MainLayout } from '@/shared/layouts'
 import { HStack, VStack } from '@/shared/ui/Stack'
 import { Text } from '@/shared/ui/Text/Text'
 import cls from './HomeWidget.module.less'
@@ -50,7 +49,6 @@ const HomeWidget = () => {
     },
   ]
     return <>
-      <MainLayout className={cls.main}>
         <VStack gap="16" align='center'>
           <Text
             className={cls.Text}
@@ -66,7 +64,6 @@ const HomeWidget = () => {
           ) }
         </HStack>
         </div>
-      </MainLayout>
     </>
   }
   
