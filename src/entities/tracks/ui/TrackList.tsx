@@ -17,6 +17,7 @@ type TrecksListProps = {
     course: string;
     eform: string;
     elevel: string;
+    recordbook:string;
   };
   currentUserId: string;
 };
@@ -55,6 +56,7 @@ const TracksList: React.FC<TrecksListProps> = ({ role, nameSpec, currentUserId }
             group: nameSpec.group,
             course: nameSpec.course,
             student_id: currentUserId,
+            recordbook:nameSpec.recordbook,
             eform: nameSpec.eform,
             is_moderator: false,
             elevel: nameSpec.elevel,
