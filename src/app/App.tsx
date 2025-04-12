@@ -20,7 +20,6 @@ import { SideBarTgu } from '@/widgets/SideBar'
 
 const MainScreen = () => {
   
-  const role = useGetRole()
   const location = useLocation()
 
   useEffect(() => {
