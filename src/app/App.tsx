@@ -9,7 +9,6 @@ import {
   Routes,
   useLocation,
 } from 'react-router-dom'
-import useGetRole from '@/shared/api/useGetRole/useGetRole'
 import { ApolloClient } from './provider/ApolloProvider'
 import AppProvider from './provider/AppProvider'
 import { Provider } from 'react-redux'
