@@ -45,8 +45,6 @@ const MainScreen = () => {
   )
 }
 
-
-
 const Root = () => {
   return (
     <ApolloClient>
