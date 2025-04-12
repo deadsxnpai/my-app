@@ -6,6 +6,7 @@ import { UserRoles } from '@/shared/constants/userRoles';
 import useRedirect from '@/shared/api/useRedirect/useRedirect';
 import { useGetTracks } from '../api/useEducation';
 import TrackCard from './TrackCard';
+import { DOMAIN, EndPoints } from '@/shared/constants/endpoints';
 
 type TrecksListProps = {
   role: string;
@@ -38,12 +39,14 @@ const TracksList: React.FC<TrecksListProps> = ({ role, nameSpec, currentUserId }
   const redirect = useRedirect();
 
   const handleNavigate = (track: Track) => {
-    const baseUrl = `/minors/detail?type=Трек&id=${track.track_id}&name=${track.name}`;
-    const studentParams =
-      role === 'student' || role === 'student-rakus'
-        ? `&namespec=${nameSpec?.namespec}&course=${nameSpec?.course}`
-        : '';
-    redirect(baseUrl + studentParams);
+    // const baseUrl = `/minors/detail?type=Трек&id=${track.track_id}&name=${track.name}`;
+    // const studentParams =
+    //   role === 'student' || role === 'student-rakus'
+    //     ? `&namespec=${nameSpec?.namespec}&course=${nameSpec?.course}`
+    //     : '';
+    // redirect(baseUrl + studentParams);
+    
+    redirect(`${EndPoints.front}/tracks`, '', true)
   };
 
   const params = {
