@@ -28,7 +28,7 @@ const HomeWidget = () => {
 		{
 			name: 'Пройти опрос',
 			desc: 'Перейти в раздел',
-			path: '/form',
+			path: '/help',
 			img: second,
 			role: [UserRoles.STUDENT, UserRoles.TESTER, UserRoles.ADMIN],
 			icon: (
@@ -42,7 +42,7 @@ const HomeWidget = () => {
 		{
 			name: 'Ваши результаты',
 			desc: 'Перейти в раздел',
-			path: '/help',
+			path: '/results',
 			img: second,
 			role: [UserRoles.STUDENT, UserRoles.TESTER, UserRoles.ADMIN],
 			icon: (

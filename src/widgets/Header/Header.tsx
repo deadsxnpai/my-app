@@ -1,10 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom
 import cls from './Header.module.less'; // Importing CSS module
-import { Text } from '@/shared';
+
 import { Button } from '@/shared/ui/button-new/button';
 
-// Header Component
 const Header = () => {
 	const navigate = useNavigate(); // Initialize navigate function
 
