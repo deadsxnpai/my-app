@@ -2,163 +2,167 @@
 @white: black;
 @activeBackground: black;
 
-@gradientBackground: linear-gradient(135deg, #020203, #343435); /* Define gradient for reuse */
+@gradientBackground: linear-gradient(
+	135deg,
+	#020203,
+	#343435
+); /* Define gradient for reuse */
 
 .mainItemFont {
-  font-family: manrope;
-  font-style: normal;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
+	font-family: manrope;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .sybItemFont {
-  font-family: manrope;
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
+	font-family: manrope;
+	font-style: normal;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
 }
 
 .sideBar {
-  // border-right: 1px solid rgba(229, 231, 238, 1);
-  transition: width 0.5s linear;
-  width: @sidebarWidth;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background: @gradientBackground; /* Apply gradient background here */
-  scrollbar-width: 0;
+	border-right: 1px solid rgba(229, 231, 238, 1);
+	transition: width 0.5s linear;
+	width: @sidebarWidth;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: @gradientBackground;
+	scrollbar-width: 0;
 }
 
 .sideBarHeaderWrap {
-  height: 200px;
-  width: inherit;
+	height: 40px;
+	width: inherit;
 }
 
 .sideBarHeader {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  top: 0;
-  overflow: hidden;
-  z-index: 101;
-  height: 200px;
-  // border-right: 1px solid #e5e7ee;
-  width: inherit;
-  background: @activeBackground; /* Apply gradient background here */
-  
-  svg {
-    margin: 0 20px 0 32px;
-    cursor: pointer;
-  }
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	overflow: hidden;
+	z-index: 101;
+	height: 50px;
+	width: 50px;
+	width: inherit;
+
+	svg {
+		margin: 0 20px 0 32px;
+		cursor: pointer;
+	}
 }
 
 .sideBarClosed {
-  width: 120px;
+	width: 120px;
 }
 
-.logo {
-  background-image: url("../../../../shared/assets/images/logo.jpg");
-  margin-left: 20px;
-  width: 200px;
-  height: 200px;
-  transition: opacity .5s linear;
-  opacity: 1;
-}
-
+// .logo {
+// 	background-image: url('../../../../shared/assets/images/logo.jpg');
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// 	margin-left: 20px;
+// 	height: 50px;
+// 	width: 50px;
+// 	transition: width 0.5s ease, opacity 0.5s ease;
+// 	overflow: hidden;
+// }
 .logoHidden {
-  transition: opacity .5s linear;
-  opacity: 0;
+	transition: opacity 0.5s linear;
+	opacity: 0;
 }
 
 .subMenu {
-  display: none;
+	display: none;
 }
 
 .subMenuOpen {
-  display: block;
-  padding-left: 15px;
-  overflow: hidden;
+	display: block;
+	padding-left: 15px;
+	overflow: hidden;
 }
 
 .mainItem {
-  cursor: pointer;
+	cursor: pointer;
 
-  .subMenu {
-    display: block;
-  }
+	.subMenu {
+		display: block;
+	}
 }
 
 .subItem {
-  overflow: hidden;
-  transition: height 0.5s linear;
-  height: 0;
+	overflow: hidden;
+	transition: height 0.5s linear;
+	height: 0;
 
-  .mainItem {
-    .sybItemFont();
-    max-width: 174px;
-    white-space: break-spaces;
-  }
+	.mainItem {
+		.sybItemFont();
+		max-width: 174px;
+		white-space: break-spaces;
+	}
 
-  .subMain {
-    font-size: 15px;
-  }
+	.subMain {
+		font-size: 15px;
+	}
 }
 
 .subItemOpen {
-  height: 53px;
+	height: 53px;
 }
 
 .mainItem {
-  .mainItemFont();
-  transition: opacity 0.3s linear;
-  opacity: 1;
-  white-space: nowrap;
-  margin: 0 0 0 20px;
-  color: inherit;
+	.mainItemFont();
+	transition: opacity 0.3s linear;
+	opacity: 1;
+	white-space: nowrap;
+	margin: 0 0 0 20px;
+	color: inherit;
 }
 
 .mainItemSecond {
-  font-size: 13px;
-  background: white;
-  border: none;
+	font-size: 13px;
+	background: white;
+	border: none;
 }
 
 .sideBar::-webkit-scrollbar {
-  width: 0;
+	width: 0;
 }
 
 button {
-  appearance: none;
-  background: none;
-  border: none;
-  padding: 0;
+	appearance: none;
+	background: none;
+	border: none;
+	padding: 0;
 }
 
 .mainItemHidden {
-  transition: opacity 0.3s linear;
-  opacity: 0;
-  white-space: nowrap;
+	transition: opacity 0.3s linear;
+	opacity: 0;
+	white-space: nowrap;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 .itemWrap {
-  display: flex;
-  position: relative;
-  align-items: center;
-  height: 56px;
-  cursor: pointer;
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 56px;
+	cursor: pointer;
 
-  div {
-    display: flex;
-  }
+	div {
+		display: flex;
+	}
 }
 
 .mainHidden {
-  height: 0;
+	height: 0;
 }

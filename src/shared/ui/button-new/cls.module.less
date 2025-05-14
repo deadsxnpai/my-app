@@ -1,0 +1,92 @@
+.button {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	white-space: nowrap;
+	border-radius: 0.375rem; /* Use appropriate unit based on your design */
+	font-size: 0.875rem; /* Adjust as needed */
+	font-weight: 500; /* Adjust as needed */
+	transition: all 0.3s ease;
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&:focus-visible {
+		outline: 2px solid rgba(59, 130, 246, 0.5); /* Adjust color and thickness */
+		outline-offset: 2px; /* Adjust outline offset as needed */
+	}
+
+	&:hover {
+		// Define hover styles based on your design
+	}
+
+	&:active {
+		// Define active styles based on your design
+	}
+
+	// Add additional states and styles as per your design system
+}
+
+// Define variant styles
+.button.default {
+	background-color: #6d7881; /* Replace with your primary color */
+	color: #ffffff; /* Replace with your primary foreground color */
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Replace with your shadow style */
+}
+
+.button.destructive {
+	background-color: #e53e3e; /* Replace with your destructive color */
+	color: #ffffff; /* Replace with your destructive foreground color */
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Replace with your shadow style */
+}
+
+.button.outline {
+	border: 1px solid #e2e8f0; /* Replace with your outline border color */
+	background-color: #ffffff; /* Replace with your background color */
+	color: #4a5568; /* Replace with your text color */
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Replace with your shadow style */
+}
+
+.button.secondary {
+	background-color: #2d3748; /* Replace with your secondary color */
+	color: #ffffff; /* Replace with your secondary foreground color */
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Replace with your shadow style */
+}
+
+.button.ghost {
+	// Define ghost button styles
+}
+
+.button.link {
+	text-decoration: underline; /* Replace with your link text decoration */
+	color: #3182ce; /* Replace with your link color */
+}
+
+// Define size variants
+.button.default {
+	height: 2.25rem; /* Adjust based on your default height */
+	padding: 0 1rem; /* Adjust based on your default padding */
+}
+
+.button.sm {
+	height: 2rem; /* Adjust based on your small size height */
+	padding: 0 0.75rem; /* Adjust based on your small size padding */
+}
+
+.button.lg {
+	height: 2.5rem; /* Adjust based on your large size height */
+	padding: 0 1.5rem; /* Adjust based on your large size padding */
+}
+
+.button.icon {
+	// Define icon button size styles
+}
+
+// Define specific SVG styles if needed
+.button.size-9 {
+	// Specific size styles for SVG
+}

@@ -38,15 +38,8 @@ const TracksList: React.FC<TrecksListProps> = ({ role, nameSpec, currentUserId }
   const [visibleYears, setVisibleYears] = useState<{ [key: string]: boolean }>({});
   const redirect = useRedirect();
 
-  const handleNavigate = (track: Track) => {
-    // const baseUrl = `/minors/detail?type=Трек&id=${track.track_id}&name=${track.name}`;
-    // const studentParams =
-    //   role === 'student' || role === 'student-rakus'
-    //     ? `&namespec=${nameSpec?.namespec}&course=${nameSpec?.course}`
-    //     : '';
-    // redirect(baseUrl + studentParams);
-    
-    redirect(`${EndPoints.front}/tracks`, '', true)
+  const handleNavigate = (track: Track) => {    
+    redirect(`/tracks-details`)
   };
 
   const params = {

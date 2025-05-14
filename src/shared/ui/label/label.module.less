@@ -1,0 +1,23 @@
+.label {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem; /* Equivalent to gap-2 */
+	font-size: 0.875rem; /* text-sm */
+	line-height: 1; /* leading-none */
+	font-weight: 500; /* font-medium */
+	user-select: none;
+
+	/* Simulating data attribute selectors */
+	&[data-disabled='true'],
+	.group[data-disabled='true'] & {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	/* Peer-based disabled styling */
+	.peer:disabled + &,
+	.peer:disabled ~ & {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+}
