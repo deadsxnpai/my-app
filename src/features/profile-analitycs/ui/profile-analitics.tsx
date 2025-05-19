@@ -9,7 +9,7 @@ import cls from './style.module.less';
 
 import { SurveyForm } from '@/features/survey-from';
 
-const COLORS = ['#0088FE', '#FF8042'];
+const COLORS = ['#0088FE', '#a93700'];
 
 type ProfileProgressChartProps = {
 	chartData: { name: string; value: number }[];
