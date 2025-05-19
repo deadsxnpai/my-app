@@ -1,0 +1,193 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"jest/globals": true
+	},
+	"plugins": ["react", "import", "@typescript-eslint", "react-hooks", "jest"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"globals": {
+		"React": true,
+		"google": true,
+		"mount": true,
+		"mountWithRouter": true,
+		"shallow": true,
+		"shallowWithRouter": true,
+		"context": true,
+		"expect": true,
+		"jsdom": true,
+		"JSX": true
+	},
+	"rules": {
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error",
+		"@typescript-eslint/no-unused-vars": ["warn"],
+		"no-console": "warn",
+		"no-debugger": "error",
+		"spaced-comment": ["warn", "always"],
+		"no-multi-spaces": "warn",
+		"array-bracket-spacing": ["warn", "never"],
+		"block-spacing": "warn",
+		"brace-style": [
+			"warn",
+			"1tbs",
+			{
+				"allowSingleLine": false
+			}
+		],
+		"comma-dangle": [
+			"off",
+			{
+				"arrays": "always",
+				"objects": "always",
+				"imports": "always",
+				"exports": "never",
+				"functions": "never"
+			}
+		],
+		"comma-spacing": [
+			"warn",
+			{
+				"before": false,
+				"after": true
+			}
+		],
+		"comma-style": ["warn", "last"],
+		"array-callback-return": "warn",
+		"no-case-declarations": "warn",
+		"no-confusing-arrow": "warn",
+		"no-useless-constructor": "warn",
+		"prefer-rest-params": "warn",
+		"template-curly-spacing": "off",
+		"no-var": "warn",
+		"eqeqeq": ["warn", "smart"],
+		"curly": ["warn", "all"],
+		"prefer-arrow-callback": "warn",
+		"generator-star-spacing": ["warn", "before"],
+		"prefer-template": "warn",
+		"prefer-const": "warn",
+		"func-call-spacing": ["warn", "never"],
+		"implicit-arrow-linebreak": ["warn", "beside"],
+		"import/extensions": [
+			"off",
+			"never",
+			{
+				"svg": "always",
+				"jpg": "always"
+			}
+		],
+		"import/first": "warn",
+		"import/no-mutable-exports": "warn",
+		"indent": [
+			"off",
+			2,
+			{
+				"SwitchCase": 1
+			}
+		],
+		"key-spacing": "warn",
+		"keyword-spacing": [
+			"warn",
+			{
+				"before": true,
+				"after": true
+			}
+		],
+		"no-array-constructor": "warn",
+		"no-cond-assign": "warn",
+		"no-constant-condition": "warn",
+		"no-control-regex": "warn",
+		"no-dupe-args": "warn",
+		"no-dupe-keys": "warn",
+		"no-duplicate-case": "warn",
+		"no-empty": "warn",
+		"no-empty-character-class": "warn",
+		"no-extra-boolean-cast": "warn",
+		"no-mixed-operators": [
+			"warn",
+			{
+				"allowSamePrecedence": true
+			}
+		],
+		"no-multi-assign": "warn",
+		"no-multiple-empty-lines": "warn",
+		"no-new-object": "warn",
+		"no-prototype-builtins": "warn",
+		"no-sparse-arrays": "warn",
+		"no-template-curly-in-string": "warn",
+		"no-trailing-spaces": "warn",
+		"no-undef": "warn",
+		"no-underscore-dangle": [
+			"warn",
+			{
+				"allowAfterThis": true
+			}
+		],
+		"no-unneeded-ternary": "warn",
+		"no-unused-vars": "warn",
+		"nonblock-statement-body-position": ["warn", "beside"],
+		"object-curly-newline": [
+			"warn",
+			{
+				"consistent": true
+			}
+		],
+		"object-curly-spacing": ["warn", "always"],
+		"object-property-newline": "off",
+		"one-var": ["warn", "never"],
+		"padded-blocks": ["warn", "never"],
+		"no-new-func": "warn",
+		"no-loop-func": "warn",
+		"no-new-wrappers": "warn",
+		"no-param-reassign": [
+			"warn",
+			{
+				"props": false
+			}
+		],
+		"no-dupe-class-members": "warn",
+		"no-eval": "warn",
+		"no-const-assign": "warn",
+		"no-else-return": "warn",
+		"dot-notation": "warn",
+		"quotes": [
+			"off",
+			"single",
+			{
+				"allowTemplateLiterals": true,
+				"avoidEscape": true
+			}
+		],
+		"wrap-iife": ["warn", "outside"],
+		"arrow-parens": ["warn", "as-needed"],
+		"arrow-spacing": "warn",
+		"semi": ["off", "never"],
+		"space-before-blocks": "warn",
+		"space-in-parens": ["warn", "never"],
+		"space-infix-ops": [
+			"warn",
+			{
+				"int32Hint": false
+			}
+		],
+		"array-element-newline": ["warn", "always"],
+		"array-bracket-newline": [
+			"off",
+			{
+				"minItems": 1
+			}
+		],
+		"react-hooks/rules-of-hooks": "warn",
+		"react-hooks/exhaustive-deps": "warn"
+	}
+}
