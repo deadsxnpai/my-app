@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { MAIN_ROUTE } from './routes';
+import { MAIN_ROUTE, PROFILE_ROUTE, RESULT_ROUTE } from './routes';
 import { UserRoles } from './userRoles';
 
 const defaultRoles = [UserRoles.ADMIN, UserRoles.STUDENT, UserRoles.TESTER];
@@ -13,18 +13,30 @@ export const navItems = [
 		icon: 'home',
 	},
 	{
-		value: 'Дисциплины по выбору',
-		role: defaultRoles,
+		value: 'Профиль',
+		role: [...defaultRoles],
 		icon: 'contacts-book',
-		path: '/tracks',
+		path: PROFILE_ROUTE,
 	},
+
 	{
-		value: 'Помощь в выборе',
+		value: 'Допольнительная информация',
 		icon: 'projects-all',
 		path: '/help',
 		role: defaultRoles,
 	},
-
+	{
+		value: 'Результат',
+		role: [...defaultRoles],
+		icon: 'personStar',
+		path: RESULT_ROUTE,
+	},
+	{
+		value: 'Дисциплины по выбору',
+		role: defaultRoles,
+		icon: 'book',
+		path: '/tracks',
+	},
 	{
 		value: 'Информация',
 		role: [...defaultRoles],

@@ -18,7 +18,7 @@ const Header = () => {
 				<div className={cls.textContainer}>
 					<h1 className={cls.title}>Система поддержки принятия решений</h1>
 					<p className={cls.subtitle}>
-						Выбор предметов для эффективного обучения
+						Для оптимального выбора набора элективных дисциплин
 					</p>
 				</div>
 			</div>
