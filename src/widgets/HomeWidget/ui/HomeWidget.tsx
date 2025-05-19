@@ -32,21 +32,6 @@ const HomeWidget = () => {
 			),
 		},
 		{
-			name: 'Дополнительная информация для системы',
-			desc: 'Перейти в раздел',
-			path: '/help',
-			img: second,
-			role: [UserRoles.STUDENT, UserRoles.TESTER, UserRoles.ADMIN],
-			icon: (
-				<IconFileAnalytics
-					size={80}
-					style={{ marginLeft: '7%' }}
-					color='#000000'
-					strokeWidth='1'
-				/>
-			),
-		},
-		{
 			name: 'Дисциплины по выбору',
 			desc: 'Перейти в раздел',
 			path: '/tracks',
@@ -80,15 +65,6 @@ const HomeWidget = () => {
 	];
 	return (
 		<>
-			<VStack
-				gap='16'
-				align='center'>
-				<Text
-					className={cls.Text}
-					size='l'
-					text='Добро пожаловать в систему поддержки принятия решений по выбору учебных предметов!'
-				/>
-			</VStack>
 			<VStack>
 				<div className={cls.Navigation}>
 					<VStack

@@ -19,18 +19,12 @@ export const navItems = [
 		path: PROFILE_ROUTE,
 	},
 
-	{
-		value: 'Допольнительная информация',
-		icon: 'projects-all',
-		path: '/help',
-		role: defaultRoles,
-	},
-	{
-		value: 'Результат',
-		role: [...defaultRoles],
-		icon: 'personStar',
-		path: RESULT_ROUTE,
-	},
+	// {
+	// 	value: 'Результат',
+	// 	role: [...defaultRoles],
+	// 	icon: 'personStar',
+	// 	path: RESULT_ROUTE,
+	// },
 	{
 		value: 'Дисциплины по выбору',
 		role: defaultRoles,

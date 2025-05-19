@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export const mockUser = {
 	fullName: 'Ключников Даниил Сергеевич',
 	group: 'МВТ-232',
-	faculty: 'Информатика и системы управления',
+	faculty: 'Информатика и вычислительная техника',
 	course: '2',
 };
 

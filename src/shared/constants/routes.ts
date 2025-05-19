@@ -4,7 +4,6 @@ import Login from '@/pages/Login/Login';
 import Logout from '@/pages/Logout/Logout';
 import { AboutPage } from '@/pages/AboutPage';
 import { TracksPage } from '@/pages/TracksPage';
-import { HelpPage } from '@/pages/help-page';
 import { ResultPage } from '@/pages/results-page';
 import ProfilePage from '@/pages/profile-page/ui/page';
 
@@ -31,11 +30,6 @@ export const AuthRoutes = [
 	{
 		path: TRACKS_ROUTE,
 		Component: TracksPage,
-		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
-	},
-	{
-		path: HELP_ROUTE,
-		Component: HelpPage,
 		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
 	},
 	{

@@ -47,7 +47,9 @@ export const ProfileForm = () => {
 							control={form.control}
 							render={({ field }) => (
 								<FormItem>
-									<FormLabel>Email</FormLabel>
+									<FormLabel className={cls.label}>
+										Введите e-mail для отправки результатов
+									</FormLabel>
 									<FormControl>
 										<Input
 											className={cls.input}
