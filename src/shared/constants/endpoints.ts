@@ -1,4 +1,4 @@
-export const DOMAIN = 'lk.tsutmb.ru';
+export const DOMAIN = 'lk-dev.tsutmb.ru';
 
 export const BASE_URL = `https://${DOMAIN}/api`;
 
