@@ -2,7 +2,6 @@
 	"name": "my-app",
 	"version": "1.0.0",
 	"private": false,
-	"homepage": "https://deadsxnpai.github.io/my-app",
 	"dependencies": {
 		"@apollo/client": "^3.12.3",
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
