@@ -54,7 +54,7 @@
 	"scripts": {
 		"start": "craco --openssl-legacy-provider start",
 		"build": "craco --openssl-legacy-provider build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [
