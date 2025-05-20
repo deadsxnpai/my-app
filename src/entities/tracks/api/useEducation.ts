@@ -32,7 +32,7 @@ const mockTrackData = {
 			max_participants: 3,
 			track_id: 98,
 			is_signed: false,
-			name: 'Графический дизайн: основы верстки и фирменный стиль',
+			name: 'Дизайн и UX',
 			sign_count: 0,
 			file: {
 				resume: [
@@ -185,7 +185,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 98,
 			is_signed: false,
-			name: 'Искусственный интеллект',
+			name: 'Кибербезопасность',
 			sign_count: 3,
 			file: {
 				resume: [
@@ -245,7 +245,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 99,
 			is_signed: false,
-			name: 'Маркетинговое управление и бизнес аналитика',
+			name: 'Бизнес и экономика',
 			sign_count: 3,
 			file: {
 				resume: [
@@ -305,7 +305,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 100,
 			is_signed: false,
-			name: 'Эффективное государственное и муниципальное управление',
+			name: 'Гуманитарные науки',
 			sign_count: 3,
 			file: {
 				resume: [
@@ -365,7 +365,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 100,
 			is_signed: false,
-			name: 'Язык и речь в интернете',
+			name: 'Программирование и инженерия',
 			sign_count: 3,
 			file: {
 				resume: [
