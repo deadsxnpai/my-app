@@ -125,7 +125,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 97,
 			is_signed: false,
-			name: 'МЕДИАКОММУНИКАЦИИ',
+			name: 'Искусственный интеллект',
 			sign_count: 3,
 			file: {
 				resume: [
@@ -185,7 +185,7 @@ const mockTrackData = {
 			max_participants: 9,
 			track_id: 98,
 			is_signed: false,
-			name: 'Безопасность личности и бизнеса',
+			name: 'Искусственный интеллект',
 			sign_count: 3,
 			file: {
 				resume: [
