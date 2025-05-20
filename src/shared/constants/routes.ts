@@ -53,4 +53,29 @@ export const publicRoutes = [
 		path: LOGOUT,
 		Component: Logout,
 	},
+	{
+		path: MAIN_ROUTE,
+		Component: HomePage,
+		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
+	},
+	{
+		path: ABOUT_ROUTE,
+		Component: AboutPage,
+		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
+	},
+	{
+		path: TRACKS_ROUTE,
+		Component: TracksPage,
+		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
+	},
+	{
+		path: RESULT_ROUTE,
+		Component: ResultPage,
+		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
+	},
+	{
+		path: PROFILE_ROUTE,
+		Component: ProfilePage,
+		roles: [UserRoles.ADMIN, UserRoles.TESTER, UserRoles.STUDENT],
+	},
 ];
