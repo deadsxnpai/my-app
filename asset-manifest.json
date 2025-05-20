@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/students-helper/static/css/main.7f1ea86e.css",
-    "main.js": "/students-helper/static/js/main.5ad81267.js",
+    "main.js": "/students-helper/static/js/main.0e7b1faf.js",
     "static/css/700.9db4c42f.chunk.css": "/students-helper/static/css/700.9db4c42f.chunk.css",
     "static/js/700.24bbcddb.chunk.js": "/students-helper/static/js/700.24bbcddb.chunk.js",
     "static/css/138.9fa424bd.chunk.css": "/students-helper/static/css/138.9fa424bd.chunk.css",
     "static/js/138.adc52aa8.chunk.js": "/students-helper/static/js/138.adc52aa8.chunk.js",
     "static/css/601.b7dcba88.chunk.css": "/students-helper/static/css/601.b7dcba88.chunk.css",
-    "static/js/601.e3157504.chunk.js": "/students-helper/static/js/601.e3157504.chunk.js",
+    "static/js/601.f1ed5f61.chunk.js": "/students-helper/static/js/601.f1ed5f61.chunk.js",
     "static/css/146.d0291486.chunk.css": "/students-helper/static/css/146.d0291486.chunk.css",
     "static/js/146.fcf28542.chunk.js": "/students-helper/static/js/146.fcf28542.chunk.js",
     "static/js/453.68693753.chunk.js": "/students-helper/static/js/453.68693753.chunk.js",
@@ -54,19 +54,19 @@
     "static/media/navigation_contanct.svg": "/students-helper/static/media/navigation_contanct.bcc9a3199c05aae0f5cb1cc0e8401925.svg",
     "index.html": "/students-helper/index.html",
     "main.7f1ea86e.css.map": "/students-helper/static/css/main.7f1ea86e.css.map",
-    "main.5ad81267.js.map": "/students-helper/static/js/main.5ad81267.js.map",
+    "main.0e7b1faf.js.map": "/students-helper/static/js/main.0e7b1faf.js.map",
     "700.9db4c42f.chunk.css.map": "/students-helper/static/css/700.9db4c42f.chunk.css.map",
     "700.24bbcddb.chunk.js.map": "/students-helper/static/js/700.24bbcddb.chunk.js.map",
     "138.9fa424bd.chunk.css.map": "/students-helper/static/css/138.9fa424bd.chunk.css.map",
     "138.adc52aa8.chunk.js.map": "/students-helper/static/js/138.adc52aa8.chunk.js.map",
     "601.b7dcba88.chunk.css.map": "/students-helper/static/css/601.b7dcba88.chunk.css.map",
-    "601.e3157504.chunk.js.map": "/students-helper/static/js/601.e3157504.chunk.js.map",
+    "601.f1ed5f61.chunk.js.map": "/students-helper/static/js/601.f1ed5f61.chunk.js.map",
     "146.d0291486.chunk.css.map": "/students-helper/static/css/146.d0291486.chunk.css.map",
     "146.fcf28542.chunk.js.map": "/students-helper/static/js/146.fcf28542.chunk.js.map",
     "453.68693753.chunk.js.map": "/students-helper/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f1ea86e.css",
-    "static/js/main.5ad81267.js"
+    "static/js/main.0e7b1faf.js"
   ]
 }
